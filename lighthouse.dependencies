@@ -1,0 +1,22 @@
+[
+  {
+    "remote": "github",
+    "repository": "arrowos-devices/android_kernel_xiaomi_sm6250",
+    "target_path": "kernel/xiaomi/sm6250"
+  },
+  {
+    "remote": "github",
+    "repository": "arrowos-devices/android_device_xiaomi_sm6250-common",
+    "target_path": "device/xiaomi/sm6250-common"
+  },
+  {
+    "remote": "github",
+    "repository": "arrowos-devices/android_vendor_xiaomi_miatoll",
+    "target_path": "vendor/xiaomi/miatoll"
+  },
+  {
+    "remote": "github",
+    "repository": "arrowos-devices/android_vendor_xiaomi_sm6250-common",
+    "target_path": "vendor/xiaomi/sm6250-common"
+  }
+]
