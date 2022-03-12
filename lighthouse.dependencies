@@ -29,5 +29,11 @@
     "remote": "github",
     "repository": "Stealth1226/android_vendor_xiaomi_miatoll",
     "target_path": "vendor/xiaomi/miatoll"
+  },
+  {
+    "remote": "github",
+    "repository": "SonalSingh18/vendor_xiaomi_miuicamera",
+    "target_path": "vendor/xiaomi/miuicamera",
+    "branch": "12"
   }
 ]
