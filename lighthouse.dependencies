@@ -6,11 +6,6 @@
   },
   {
     "remote": "github",
-    "repository": "arrowos-devices/android_packages_apps_GCamGOPrebuilt",
-    "target_path": "packages/apps/GCamGOPrebuilt"
-  },
-  {
-    "remote": "github",
     "repository": "arrowos-devices/android_hardware_xiaomi",
     "target_path": "hardware/xiaomi"
   },
@@ -23,17 +18,19 @@
   {
     "remote": "github",
     "repository": "lighthouse-os-devices/android_kernel_xiaomi_sm6250",
-    "target_path": "kernel/xiaomi/sm6250"
+    "target_path": "kernel/xiaomi/sm6250",
+    "branch": "sailboat"
   },
   {
     "remote": "github",
-    "repository": "Stealth1226/android_vendor_xiaomi_miatoll",
-    "target_path": "vendor/xiaomi/miatoll"
+    "repository": "lighthouse-os-devices/vendor_xiaomi_miatoll",
+    "target_path": "vendor/xiaomi/miatoll",
+    "branch": "sailboat"
   },
   {
     "remote": "github",
-    "repository": "SonalSingh18/vendor_xiaomi_miuicamera",
+    "repository": "lighthouse-os-devices/vendor_xiaomi_miuicamera",
     "target_path": "vendor/xiaomi/miuicamera",
-    "branch": "12"
+    "branch": "sailboat"
   }
 ]
