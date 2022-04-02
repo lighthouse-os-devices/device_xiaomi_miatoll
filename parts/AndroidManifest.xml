@@ -122,42 +122,6 @@
             android:enabled="true"
             android:stopWithTask="false" />
 
-        <service
-            android:name=".XiaomipartsTile"
-            android:enabled="true"
-            android:icon="@drawable/ic_mi"
-            android:label="@string/advanced_settings"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
-        <service
-            android:name="com.xiaomi.parts.LogTile"
-            android:icon="@drawable/ic_qs_log"
-            android:label="@string/quick_settings_log_tile_label"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-        <service
-            android:name=".FPSInfoService"
-            android:exported="false">
-        </service>
-        <service
-            android:name=".FPSTileService"
-            android:icon="@drawable/ic_fps_info"
-            android:label="@string/fps_info_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
         <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"

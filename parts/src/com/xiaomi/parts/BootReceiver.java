@@ -70,9 +70,5 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
        // Thermal
         ThermalUtils.initialize(context);
 
-        boolean enabled = sharedPrefs.getBoolean(DeviceSettings.PREF_KEY_FPS_INFO, false);
-        if (enabled) {
-            context.startService(new Intent(context, FPSInfoService.class));
-        }
     }
 }

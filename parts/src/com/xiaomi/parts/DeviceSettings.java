@@ -51,8 +51,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_USB_FASTCHARGE = "fastcharge";
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
 
-    public static final String PREF_KEY_FPS_INFO = "fps_info";
-
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
 
     private Preference mKcal;
@@ -62,7 +60,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private SecureSettingListPreference mHeadsetType;
     private SecureSettingListPreference mPreset;
     private SecureSettingSwitchPreference mFastcharge;
-    private static SwitchPreference mFpsInfo;
 
     private static Context mContext;
 
@@ -132,10 +129,6 @@ public class DeviceSettings extends PreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(findPreference(CATEGORY_FASTCHARGE));
         }
-
-        mFpsInfo = (SwitchPreference) findPreference(PREF_KEY_FPS_INFO);
-        mFpsInfo.setChecked(prefs.getBoolean(PREF_KEY_FPS_INFO, false));
-        mFpsInfo.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -171,16 +164,6 @@ public class DeviceSettings extends PreferenceFragment implements
 
             case PREF_USB_FASTCHARGE:
                 FileUtils.setValue(USB_FASTCHARGE_PATH, (boolean) value);
-                break;
-
-            case PREF_KEY_FPS_INFO:
-                boolean enabled = (Boolean) value;
-                Intent fpsinfo = new Intent(this.getContext(), FPSInfoService.class);
-                if (enabled) {
-                    this.getContext().startService(fpsinfo);
-                } else {
-                    this.getContext().stopService(fpsinfo);
-                }
                 break;
             default:
                 break;
